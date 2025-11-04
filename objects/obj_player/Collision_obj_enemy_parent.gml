@@ -17,8 +17,8 @@ if (vel_y > 0)
 		// Set the vertical velocity of the player to -jump_speed so it bounces off the enemy.
 		vel_y = -jump_speed;
 	
-		// Change the sprite to spr_player_jump as the player is now jumping (and not falling anymore).
-		sprite_index = spr_player_jump;
+		// Change the sprite to spr_player_red_jump as the player is now jumping (and not falling anymore).
+		sprite_index = spr_player_red_jump;
 		image_index = 0;
 	
 		// The animation speed at this point would be 0 if the fall animation had finished, so we reset

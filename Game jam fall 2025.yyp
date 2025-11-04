@@ -73,7 +73,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.14.0.207",
   },
   "name":"Game jam fall 2025",
   "resources":[
@@ -223,6 +223,7 @@
     {"id":{"name":"spr_player_hurt","path":"sprites/spr_player_hurt/spr_player_hurt.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},},
+    {"id":{"name":"spr_player_red_fall","path":"sprites/spr_player_red_fall/spr_player_red_fall.yy",},},
     {"id":{"name":"spr_player_red_idle","path":"sprites/spr_player_red_idle/spr_player_red_idle.yy",},},
     {"id":{"name":"spr_player_red_jump","path":"sprites/spr_player_red_jump/spr_player_red_jump.yy",},},
     {"id":{"name":"spr_player_red_walk","path":"sprites/spr_player_red_walk/spr_player_red_walk.yy",},},

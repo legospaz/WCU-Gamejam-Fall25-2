@@ -24,7 +24,7 @@ player_jump = function()
 		vel_y = -jump_speed;
 
 		// This changes the player's sprite to the jump sprite, and resets the frame to 0.
-		sprite_index = spr_player_jump;
+		sprite_index = spr_player_red_jump;
 		image_index = 0;
 
 		// This sets 'grounded' to false, so that any events after this know that the player is not supposed
@@ -62,7 +62,7 @@ player_left = function()
 	vel_x = -move_speed;
 
 	// This checks if the current sprite is the fall sprite, meaning the player hasn't landed yet.
-	if (sprite_index == spr_player_fall)
+	if (sprite_index == spr_player_red_fall)
 	{
 		// In that case we return
 		return;
@@ -98,7 +98,7 @@ player_right = function()
 	vel_x = move_speed;
 
 	// This checks if the current sprite is the fall sprite, meaning the player hasn't landed yet.
-	if (sprite_index == spr_player_fall)
+	if (sprite_index == spr_player_red_fall)
 	{
 		// In that case we return
 		return;
