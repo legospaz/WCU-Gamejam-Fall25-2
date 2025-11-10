@@ -15,7 +15,14 @@ switch (sprite_index)
 		if (vel_x == 0)
 		{
 			// In that case we change its sprite to the idle one.
-			sprite_index = spr_player_red_idle;
+			if(obj_player.isRed)
+			{	
+				sprite_index = spr_player_red_idle;
+			}
+			else
+			{
+				sprite_index = spr_player_green_idle
+			}
 		}
 	
 		// This checks if the Y velocity of the player is greater than 1, meaning it is falling down.
@@ -23,8 +30,52 @@ switch (sprite_index)
 		if (vel_y > 1)
 		{
 			// In that case we change its sprite to the fall one, and reset the frame to 0.
-			sprite_index = spr_player_red_fall;
-			image_index = 0;
+				if(obj_player.isRed)
+			{	
+				sprite_index = spr_player_red_fall;
+				image_index =0;
+			}
+			else
+			{
+				sprite_index = spr_player_green_fall;
+				image_index =0;
+			}
+		}
+		break;
+		
+		case spr_player_green_walk:
+		// Set the animation speed to 1, as it may have been set to 0 during the jump animation.
+		image_speed = 1;
+	
+		// This checks if the X velocity is 0, meaning the player is not moving horizontally.
+		if (vel_x == 0)
+		{
+			// In that case we change its sprite to the idle one.
+			if(obj_player.isRed)
+			{	
+				sprite_index = spr_player_red_idle;
+			}
+			else
+			{
+				sprite_index = spr_player_green_idle;
+			}
+		}
+	
+		// This checks if the Y velocity of the player is greater than 1, meaning it is falling down.
+		// This would happen when the player walks off a ledge.
+		if (vel_y > 1)
+		{
+			// In that case we change its sprite to the fall one, and reset the frame to 0.
+			if(obj_player.isRed)
+			{	
+				sprite_index = spr_player_red_fall;
+				image_index =0;
+			}
+			else
+			{
+				sprite_index = spr_player_green_fall;
+				image_index =0;
+			}
 		}
 		break;
 
@@ -34,8 +85,37 @@ switch (sprite_index)
 		if (vel_y >= 0)
 		{
 			// In that case we change its sprite to the fall sprite, and reset the frame to 0.
-			sprite_index = spr_player_red_fall;
-			image_index = 0;
+				if(obj_player.isRed)
+			{	
+				sprite_index = spr_player_red_fall;
+				image_index =0;
+			}
+			else
+			{
+				sprite_index = spr_player_green_fall;
+				image_index =0;
+			}
+		
+			// We also reset the animation speed to 1, as it was set to 0 at the end of the jump animation.
+			image_speed = 1;
+		}
+		break;
+		
+		case spr_player_green_jump:
+		// This checks if the Y velocity is equal to, or greater than 0, meaning the player has now started falling downward.
+		if (vel_y >= 0)
+		{
+			// In that case we change its sprite to the fall sprite, and reset the frame to 0.
+				if(obj_player.isRed)
+			{	
+				sprite_index = spr_player_red_fall;
+				image_index =0;
+			}
+			else
+			{
+				sprite_index = spr_player_green_fall;
+				image_index =0;
+			}
 		
 			// We also reset the animation speed to 1, as it was set to 0 at the end of the jump animation.
 			image_speed = 1;
@@ -48,7 +128,36 @@ switch (sprite_index)
 		if (grounded)
 		{
 			// In that case we change its sprite to the idle sprite.
-			sprite_index = spr_player_red_idle;
+			if(obj_player.isRed)
+			{
+				sprite_index = spr_player_red_idle;
+			}
+			else
+			{
+				sprite_index = spr_player_green_idle
+			}
+		
+			// We also reset the animation speed to 1, as it was set to 0 at the end of the fall animation.
+			image_speed = 1;
+		
+			// Play the landing sound effect
+			audio_play_sound(snd_land_01, 0, 0);
+		}
+		break;
+		
+		case spr_player_green_fall:
+		// This checks if the player is now on the ground
+		if (grounded)
+		{
+			// In that case we change its sprite to the idle sprite.
+			if(obj_player.isRed)
+			{
+				sprite_index = spr_player_red_idle;
+			}
+			else
+			{
+				sprite_index = spr_player_green_idle
+			}
 		
 			// We also reset the animation speed to 1, as it was set to 0 at the end of the fall animation.
 			image_speed = 1;

@@ -14,10 +14,28 @@ switch (sprite_index)
 		// We also set the current frame to the last frame of the animation, which will remain visible
 		image_index = image_number - 1;
 		break;
+		
+		case spr_player_green_jump:
+		// Since the animation has ended (which is why this event is running), we stop the animation
+		// by setting its speed to 0
+		image_speed = 0;
+	
+		// We also set the current frame to the last frame of the animation, which will remain visible
+		image_index = image_number - 1;
+		break;
 
 	// Code under this case runs if the assigned sprite is 'spr_player_red_fall', meaning
 	// the player was falling downward.
 	case spr_player_red_fall:
+		// Since the animation has ended (which is why this event is running), we stop the animation
+		// by setting its speed to 0
+		image_speed = 0;
+	
+		// We also set the current frame to the last frame of the animation, which will remain visible
+		image_index = image_number - 1;
+		break;
+		
+		case spr_player_green_fall:
 		// Since the animation has ended (which is why this event is running), we stop the animation
 		// by setting its speed to 0
 		image_speed = 0;

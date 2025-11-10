@@ -1,6 +1,7 @@
 // This runs the Create event of the parent, ensuring the player gets all variables from the character parent.
 event_inherited();
 
+
 // This variable stores the number of coins the player has collected.
 coins = 0;
 
@@ -13,6 +14,8 @@ defeated_object = obj_player_defeated;
 // Flag for if a jump is detected
 jump_input = false;
 
+action_input = false;
+
 // Function to be called when a player jumps
 player_jump = function()
 {
@@ -24,8 +27,16 @@ player_jump = function()
 		vel_y = -jump_speed;
 
 		// This changes the player's sprite to the jump sprite, and resets the frame to 0.
-		sprite_index = spr_player_red_jump;
-		image_index = 0;
+		if(obj_player.isRed)
+		{
+			sprite_index = spr_player_red_jump;
+			image_index = 0;
+		}
+		else
+		{
+			sprite_index = spr_player_green_jump;
+			image_index = 0;
+		}
 
 		// This sets 'grounded' to false, so that any events after this know that the player is not supposed
 		// to be on the ground anymore.
@@ -73,7 +84,14 @@ player_left = function()
 	if (grounded)
 	{
 		// Change the instance's sprite to the walking player sprite.
-		sprite_index = spr_player_red_walk;
+		if(obj_player.isRed)
+		{
+			sprite_index = spr_player_red_walk;
+		}
+		else
+		{
+			sprite_index = spr_player_green_walk;
+		}
 	}
 	
 	// Sets input flag back to false
@@ -109,9 +127,33 @@ player_right = function()
 	if (grounded)
 	{
 		// Change the instance's sprite to the walking player sprite.
-		sprite_index = spr_player_red_walk;
+		if(obj_player.isRed)
+		{
+			sprite_index = spr_player_red_walk;
+		}
+		else
+		{
+			sprite_index = spr_player_green_walk;
+		}
 	}
 	
 	// Sets input flag back to false
 	right_input = false;
+}
+
+player_action = function()
+{
+	
+	if(obj_player.isRed)
+	{
+		obj_player.isRed = false;
+		coins+=1;	
+	}
+	else
+	{
+		obj_player.isRed =true;
+		coins-=1;
+	}
+	//if color is 1 use green
+	action_input = false;
 }

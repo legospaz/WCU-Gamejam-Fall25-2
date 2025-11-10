@@ -21,3 +21,9 @@ if (right_input)
 	// Preforms a player right movement
 	player_right();	
 }
+
+//checks for Action Input
+if (action_input)
+{
+	player_action();
+}

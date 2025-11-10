@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_player_red_walk",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":153,
   "bbox_left":24,
   "bbox_right":131,
-  "bbox_top":5,
+  "bbox_top":29,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

@@ -3,5 +3,13 @@
 in_knockback = false;
 
 // This changes the sprite back to the idle one, as the knockback would have been using the hurt sprite.
-sprite_index = spr_player_idle;
-image_index = 0;
+if(obj_player.isRed)
+{
+	sprite_index = spr_player_red_idle;
+	image_index = 0;
+}
+else
+{
+	sprite_index = spr_player_green_idle;
+	image_index = 0;
+}

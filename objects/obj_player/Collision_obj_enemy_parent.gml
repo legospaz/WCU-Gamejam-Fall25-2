@@ -18,9 +18,16 @@ if (vel_y > 0)
 		vel_y = -jump_speed;
 	
 		// Change the sprite to spr_player_red_jump as the player is now jumping (and not falling anymore).
-		sprite_index = spr_player_red_jump;
-		image_index = 0;
-	
+		if(obj_player.isRed)
+		{
+			sprite_index = spr_player_red_jump;
+			image_index = 0;
+		}
+		else
+		{
+			sprite_index = spr_player_green_jump;
+			image_index = 0;
+		}
 		// The animation speed at this point would be 0 if the fall animation had finished, so we reset
 		// it to 1 so the jump animation can play.
 		image_speed = 1;

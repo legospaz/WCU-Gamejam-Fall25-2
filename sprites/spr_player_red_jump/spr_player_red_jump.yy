@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_player_red_jump",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":143,
   "bbox_left":29,
   "bbox_right":124,
-  "bbox_top":10,
+  "bbox_top":29,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
