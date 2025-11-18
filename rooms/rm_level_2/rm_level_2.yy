@@ -111,9 +111,14 @@
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_45AC580E_1","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_45AC580E_1","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_ground_bottom_moss_left","path":"sprites/spr_ground_bottom_moss_left/spr_ground_bottom_moss_left.yy",},"x":256.0,"y":1664.0,},
       ],"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Foliage","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"CollisionTiles","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionTiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":34,"SerialiseWidth":149,"TileCompressedData":[
-          2,86,15,-147,0,2,86,15,-147,0,2,86,15,-147,0,2,86,15,-147,0,2,86,15,-147,0,2,86,15,-147,0,2,86,15,-147,
-          0,2,86,15,-147,0,2,86,15,-147,0,2,86,15,-147,0,2,86,15,-147,0,2,86,15,-147,0,2,86,15,-147,0,2,86,100,
-          -147,74,-2980,86,
+          2,86,15,-122,0,-25,-2147483648,2,86,15,-122,0,-25,-2147483648,2,86,15,-122,0,-25,-2147483648,2,86,15,
+          -122,0,-25,-2147483648,2,86,15,-122,0,-25,-2147483648,2,86,15,-122,0,-25,-2147483648,2,86,15,-122,0,
+          -25,-2147483648,2,86,15,-122,0,-25,-2147483648,2,86,15,-122,0,-25,-2147483648,2,86,15,-122,0,-25,-2147483648,
+          2,86,15,-122,0,-25,-2147483648,2,86,15,-122,0,-25,-2147483648,2,86,15,-122,0,-25,-2147483648,2,86,100,
+          -122,74,-25,-2147483648,-124,86,-25,-2147483648,-124,86,-25,-2147483648,-124,86,-25,-2147483648,-124,
+          86,-25,-2147483648,-124,86,-25,-2147483648,-124,86,-25,-2147483648,-124,86,-25,-2147483648,-124,86,-25,
+          -2147483648,-124,86,-25,-2147483648,-124,86,-25,-2147483648,-124,86,-25,-2147483648,-124,86,-25,-2147483648,
+          -124,86,-25,-2147483648,-124,86,-25,-2147483648,-124,86,-770,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_world","path":"tilesets/ts_world/ts_world.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"EndGate","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_F839FAF_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_F839FAF_1","objectId":{"name":"obj_end_gate","path":"objects/obj_end_gate/obj_end_gate.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6976.0,"y":1664.0,},
