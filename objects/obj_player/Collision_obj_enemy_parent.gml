@@ -72,7 +72,7 @@ in_knockback = true;
 no_hurt_frames = 120;
 
 // This changes the sprite to the hurt sprite.
-sprite_index = spr_player_hurt;
+sprite_index = spr_player_white_hurt;
 image_index = 0;
 
 // Set Alarm 0 to run after 15 frames; that event stops the player's horizontal velocity, ending the knockback

@@ -147,12 +147,10 @@ player_action = function()
 	if(obj_player.isRed)
 	{
 		obj_player.isRed = false;
-		coins+=1;	
 	}
 	else
 	{
 		obj_player.isRed =true;
-		coins-=1;
 	}
 	//if color is 1 use green
 	action_input = false;

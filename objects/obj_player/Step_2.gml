@@ -168,7 +168,7 @@ switch (sprite_index)
 		break;
 
 	// Code under this case runs if the assigned sprite is 'spr_player_hurt', meaning the player is in the middle of a knockback.
-	case spr_player_hurt:
+	case spr_player_white_hurt:
 		// This checks if the player is grounded, so the dust VFX can be created.
 		if (grounded)
 		{
